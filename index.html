@@ -2,46 +2,99 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Landing Page Abiyyu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Saya</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+      font-family: 'Arial', sans-serif;
       color: #333;
-      text-align: center;
+      background: #f9f9f9;
     }
     header {
-      padding: 100px 20px;
+      background: #4A90E2;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
     }
-    h1 {
+    header h1 {
+      margin: 0;
       font-size: 48px;
-      margin: 0 0 20px;
     }
-    p {
-      font-size: 20px;
-      margin-bottom: 40px;
-    }
-    button {
-      padding: 15px 30px;
+    header p {
       font-size: 18px;
-      background: #333;
-      color: #fff;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
     }
-    button:hover {
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
       background: #555;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Selamat Datang di Halaman Saya 👋</h1>
-    <p>Ini landing page interaktif pakai GitHub Pages</p>
-    <button onclick="alert('Terima kasih sudah klik!')">Klik Saya</button>
+    <h1>Selamat Datang!</h1>
+    <p>Ini adalah website pribadi saya</p>
   </header>
+
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#portofolio">Portofolio</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+    <section id="tentang" class="card">
+      <h2>Tentang Saya</h2>
+      <p>Halo! Saya adalah seorang profesional di bidang teknologi dan digital. Saya suka membuat website, aplikasi, dan sistem otomasi.</p>
+    </section>
+
+    <section id="portofolio" class="card">
+      <h2>Portofolio</h2>
+      <p>Berikut beberapa proyek yang pernah saya kerjakan:</p>
+      <ul>
+        <li>Website Company Profile</li>
+        <li>Aplikasi Monitoring</li>
+        <li>Dashboard Data</li>
+      </ul>
+    </section>
+
+    <section id="kontak" class="card">
+      <h2>Kontak</h2>
+      <p>Email: abiyyuhamman24@gmail.com</p>
+      <p>LinkedIn: <a href="#" target="_blank">Profil LinkedIn</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Abiyyu. All rights reserved.
+  </footer>
 </body>
 </html>
